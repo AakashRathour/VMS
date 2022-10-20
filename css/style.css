@@ -1,0 +1,109 @@
+.lead-panel-accordion .card .card-header{
+    padding:0;
+}
+.lead-panel-accordion .card .card-header a{
+    display:block;
+    text-align: left;
+    padding: 15px 20px;
+    color: #000;
+}
+.lead-panel-accordion .card .card-header a:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+}
+.lead-panel-accordion .card .card-header a.collapsed:after {
+    content: "\f106";
+}
+.lead-panel-accordion .card .card-header a:hover,.lead-panel-accordion .card .card-header a:focus{
+    box-shadow: none!important;
+}
+.lead-panel-accordion .card .card-body{
+    padding:0 20px 15px;
+}
+.lead-panel-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.lead-panel-fields-value{
+    color: #000;
+}
+.lead-panel-fields:last-child {
+    margin-bottom: 0;
+}
+@media (max-width:767px){
+    .lead-panel-fields-value,.lead-panel-fields-header{
+        font-size: 14px;
+    }
+}
+body .sidebar-light .sidebar-brand {
+    color: #333;
+    background-color: #fff;
+}
+.bg-navbar{
+    background-color: #fff;
+}
+.bg-navbar #sidebarToggleTop{
+    color: #333;
+}
+.bg-navbar #sidebarToggleTop:hover{
+    background-color: #cd454e;
+    color: #fff;
+}
+.topbar.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #333;
+}
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:hover{
+    color: #333;
+}
+.login-form{
+    padding:30px 40px!important;
+}
+.form-control{
+    border-radius:0.6rem;
+    background: #eceff1;
+    font-size: 14px;
+}
+.btn-outline-primary,.btn-primary,.btn-outline-light{
+    border-radius: 25px;
+}
+.btn-primary{
+    opacity: .9;
+}
+.btn-primary:hover{
+    background-color: #cd454e;
+    border-color:#cd454e;
+    opacity: 1;
+}
+.login-form-radius{
+    border-radius: 25px;
+}
+.bg-gradient-login {
+    background-image: linear-gradient(to bottom, #FFE4E1, #eceff1);
+}
+.sticky-footer{
+    display: none;
+}
+.btn-min-w{
+    min-width: 150px;
+}
+@media (min-width:768px){
+    .btn-fixed-mobile{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:767px){
+    .btn-fixed-mobile {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        text-align: center!important;
+        padding: 15px 0;
+        background: #fff;
+        box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+    }
+}

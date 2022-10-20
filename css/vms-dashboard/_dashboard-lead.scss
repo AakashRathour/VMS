@@ -1,0 +1,50 @@
+.lead-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  @media (max-width: 767px) {
+    display: block;
+    overflow: hidden;
+  }
+  .lead-article {
+    flex-grow: 1;
+    padding-right: 20px !important;
+    @media (max-width: 767px) {
+      padding-right: 0.5rem !important;
+    }
+    
+    .padno {
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+    }
+
+    .btn-fixed-mobile {
+      @media (max-width: 991px) {
+        text-align: center !important;
+      }
+      @media (max-width: 767px) {
+        z-index: 9;
+      }
+    }
+  }
+
+  .deskhide {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.mobhide {
+  display: none !important;
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+
+.btn-min-w {
+  font-weight: 700;
+}

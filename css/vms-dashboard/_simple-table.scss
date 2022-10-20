@@ -1,0 +1,318 @@
+// Filter Panel Css
+.dashboard-grid {
+  .row {
+    overflow-y: hidden;
+  }
+  .simple-g-table {
+    .card-header {
+      padding: 0;
+      &:first-child {
+        border-radius: 0;
+      }
+
+      .acc-head {
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        &:hover {
+          background: $bg-blackshadow;
+        }
+        h6 {
+          color: $bg-black;
+          font-weight: 700;
+          margin: 0;
+          padding: 0.75rem 1.25rem;
+          background-color: $bg-white;
+        }
+        &:before {
+          background-image: url("../../assets/locals/img/plus.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: right center;
+          content: "";
+          position: absolute;
+          top: 34%;
+          right: 15px;
+          width: 13px;
+          height: 13px;
+          transition: all 0.3s;
+        }
+        &:after {
+          background-image: url("../../assets/locals/img/minus.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: right center;
+          content: "";
+          position: absolute;
+          top: 34%;
+          right: 15px;
+          width: 13px;
+          height: 13px;
+          transition: all 0.3s;
+        }
+      }
+      .acc-head.active {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: block;
+        }
+      }
+      .acc-content {
+        display: none;
+        padding: 0;
+        border-top: 1px solid $bg-exlightgray;
+        .viewlead-wrapper {
+          .accordion-panel {
+            .card-panel {
+              border-bottom: 1px solid $bg-exlightgray;
+              .card-title {
+                margin-bottom: 0;
+                padding: 10px 1.25rem;
+                cursor: pointer;
+                background: $bg-white;
+                position: relative;
+                transition: 0.3s;
+                &:hover {
+                  background: $bg-blackshadow;
+                }
+                &:after {
+                  content: "\f106";
+                  font-family: "Font Awesome 5 Free";
+                  font-weight: 900;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  right: 15px;
+                  color: $bg-black;
+                }
+                h6 {
+                  margin: 0;
+                }
+              }
+              .viewlead-inner {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                padding: 10px 1.25rem 10px;
+                &:first-child {
+                  border-top: 0;
+                }
+                .form-group {
+                  flex-basis: 24%;
+                  margin-bottom: 5px;
+                  @media (max-width: 1230px) {
+                    flex-basis: 49%;
+                  }
+                  @media (max-width: 1230px) {
+                    flex-basis: 48%;
+                  }
+                  @media (max-width: 767px) {
+                    flex-basis: 100%;
+                  }
+                  label {
+                    font-size: 14px;
+                    @media (max-width: 1450px) {
+                      font-size: 12px;
+                    }
+                    @media (max-width: 1300px) {
+                      font-size: 11px;
+                    }
+                    @media (max-width: 1230px) {
+                      font-size: 13px;
+                    }
+                    @media (max-width: 991px) {
+                      font-size: 11px;
+                    }
+                    @media (max-width: 767px) {
+                      font-size: 12px;
+                    }
+                    @media (max-width: 480px) {
+                      font-size: 13px;
+                    }
+                  }
+                  .form-control {
+                    background: transparent;
+                    border: 1px solid $bg-darkgray;
+                    border-radius: 4px;
+                    &:first-child {
+                      border-top-right-radius: 0;
+                      border-bottom-right-radius: 0;
+                    }
+                    &:last-child {
+                      border-top-left-radius: 0;
+                      border-bottom-left-radius: 0;
+                    }
+                  }
+                  .select2-container {
+                    display: block;
+                    @media (max-width: 1229px) {
+                      flex-basis: calc(100% - 79px);
+                    }
+                    @media (max-width: 991px) {
+                      flex-basis: calc(100% - 66px);
+                    }
+                    @media (max-width: 991px) {
+                      flex-basis: calc(100% - 56px);
+                    }
+                    .select2-selection--multiple {
+                      // height: 40px;
+                      min-height: initial;
+                    }
+                    .select2-selection--single {
+                      height: 40px;
+                      padding-top: 5px;
+                      background-color: $bg-white;
+                      border: 1px solid $bg-darkgray;
+                      border-radius: 4px;
+                      .select2-selection__arrow b {
+                        margin-top: 4px;
+                      }
+                    }
+                  }
+                  .input-daterange {
+                    input {
+                      height: 40px;
+                      background-color: $bg-white;
+                      border: 1px solid $bg-darkgray;
+                    }
+                    .input-group-prepend {
+                      margin-right: 0px;
+                    }
+                  }
+                  .custom-control.custom-radio {
+                    margin-top: 3px;
+                    .mb-btm {
+                      padding-bottom: 6px;
+                      .custom-control-label {
+                        &:before {
+                          top: 0.1rem;
+                        }
+                        &:after {
+                          top: 0.11rem;
+                        }
+                      }
+                    }
+                    .form-group {
+                      display: none;
+                    }
+                  }
+                }
+                .filter-date {
+                  display: flex;
+                  justify-content: space-between;
+                  flex-basis: 100%;
+                  position: absolute;
+                  right: 45px;
+                  margin-top: 2px;
+                  .form-group {
+                    flex-basis: 50%;
+                    display: flex;
+                    align-items: center;
+                    @media (max-width: 1270px) {
+                      flex-basis: 100%;
+                    }
+                    label {
+                      margin-bottom: 0.3rem;
+                      width: 60px;
+                      @media (max-width: 991px) {
+                        width: 50px;
+                      }
+                      @media (max-width: 767px) {
+                        width: 60px;
+                      }
+                    }
+                  }
+                  @media (max-width: 1230px) {
+                    position: relative;
+                    flex-basis: 100%;
+                    right: 0;
+                    justify-content: flex-end;
+                    display: flex;
+                    width: 100%;
+                  }
+                  @media (max-width: 500px) {
+                    flex-wrap: wrap;
+                  }
+                }
+              }
+            }
+            .card-panel.active {
+              .card-title:after {
+                content: "\f107";
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .leadtable {
+      table {
+        tr {
+          overflow-x: auto;
+          white-space: nowrap;
+          position: relative;
+          td,
+          th {
+            font-size: 13px;
+            vertical-align: middle;
+            &:first-child {
+              position: sticky;
+              top: 0;
+              left: 0;
+            }
+          }
+          td {
+            background-color: $bg-white;
+          }
+        }
+        .thead-light {
+          th {
+            color: $bg-cyanred;
+            background-color: $bg-cyan;
+            border-color: $bg-exlightgray;
+          }
+        }
+      }
+    }
+
+    #dataTable_info {
+      @media (max-width: 991px) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    #dataTable_paginate {
+      margin: 0;
+      white-space: nowrap;
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+      @media (max-width: 767px) {
+        padding-bottom: 15px;
+      }
+      ul.pagination {
+        margin: 2px 0;
+        white-space: nowrap;
+        justify-content: flex-end;
+        @media (max-width: 991px) {
+          justify-content: center;
+        }
+
+        .page-link {
+          @media (max-width: 500px) {
+            padding: 0.4rem 0.5rem;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-panel .card-title .card-detail .custom-control.custom-checkbox {
+  pointer-events: none;
+}

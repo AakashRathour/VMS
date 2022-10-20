@@ -1,0 +1,97 @@
+.verification-form {
+  .verification-inner {
+    .verification-top {
+      .verification-status {
+        flex-basis: 27%;
+        background: $bg-lightgray;
+        text-align: center;
+        border-color: $bg-darkgray !important;
+        &:first-child {
+          flex-basis: 46%;
+          background: transparent;
+        }
+        h5 {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 700;
+          @media (max-width: 1250px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .verification-middle {
+      .veri-approved {
+        flex-basis: 9%;
+        text-align: center;
+        background: $bg-lightgray;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $bg-darkgray;
+        border-right: 0;
+        &:first-child {
+          flex-basis: 46%;
+          text-align: left;
+          padding-left: 40px !important;
+        }
+        &:last-child {
+          border-right: 1px solid $bg-darkgray;
+        }
+        h6 {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 600;
+          @media (max-width: 1250px) {
+            font-size: 13px;
+          }
+          @media (max-width: 1155px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .verification-body {
+      .card-panel {
+        .viewlead-inner {
+          .viewlead-td {
+            p {
+              font-size: 14px;
+              @media (max-width: 1155px) {
+                font-size: 11px;
+              }
+              @media (max-width: 1250px) {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        &.active {
+          .card-title {
+            &:after {
+              content: "\f107";
+            }
+          }
+        }
+        .card-title {
+          &:after {
+            right: auto;
+            left: 15px;
+            @media (max-width: 991px) {
+              left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    width: 100%;
+    overflow-x: auto;
+    .verification-inner {
+      width: 835px;
+    }
+  }
+}

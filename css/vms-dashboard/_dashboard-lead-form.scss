@@ -1,0 +1,161 @@
+.noshadow {
+  box-shadow: none !important;
+  background: $bg-fueslightgray;
+  @media (max-width: 767px) {
+    .card-body {
+      padding: 0;
+    }
+  }
+  .newDetailsForm {
+    max-width: 850px;
+    margin: auto;
+    background: $bg-white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    @media (max-width: 1200px) {
+      max-width: 700px;
+    }
+    @media (max-width: 991px) {
+      padding: 20px;
+    }
+    @media (max-width: 480px) {
+      padding: 10px;
+    }
+    .from-group-wrap {
+      .form-lead-title {
+        border-bottom: 1px solid $bg-lightgray;
+        @media (max-width: 990px) {
+          margin-bottom: 0.3rem !important;
+          padding-bottom: 0.2rem !important;
+        }
+        h5 {
+          font-weight: 700;
+          @media (max-width: 767px) {
+            padding-top: 0.5rem;
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+      .form-lead-detail {
+        border-bottom: 1px solid $bg-lightgray;
+        @media (max-width: 767px) {
+          margin-bottom: 0.3rem !important;
+          padding-bottom: 0.2rem !important;
+        }
+
+        .select2-container--default {
+          .select2-selection--multiple {
+            background: $bg-deepgray;
+            border-color: $bg-deepgray-border;
+            border-radius: 8px;
+            padding-left: 8px;
+          }
+        }
+        .select2-container {
+          width: 100% !important;
+          span.select2-selection.select2-selection--single {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 7px);
+            padding: 7px 5px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $bg-gray;
+            background-color: $bg-deepgray;
+            background-clip: padding-box;
+            border: 1px solid $bg-deepgray-border;
+            border-radius: 8px;
+            .select2-selection__arrow {
+              top: 8px;
+            }
+          }
+        }
+        .fileUpload {
+          position: relative;
+          overflow: hidden;
+          border-radius: 0;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          height: 100%;
+          cursor: pointer;
+          &:hover {
+            background-color: $bg-black;
+          }
+          input.upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+          span.upl {
+            position: relative;
+            top: 1px;
+          }
+        }
+        .form-control:disabled,
+        .form-control[readonly] {
+          background-color: $bg-deepgray;
+        }
+        .inside_upload-img {
+          display: none;
+        }
+        .outside_upload-img {
+          padding-bottom: 15px;
+        }
+        .pdf-generator.inside_togg .inside_upload-img {
+          display: block;
+        }
+        .viewshow-file {
+          display: flex;
+          align-items: center;
+        }
+      }
+      //   End Form lead Details
+      &:last-child {
+        .form-lead-detail {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .select2-container--default.select2-container--focus {
+      .select2-selection--multiple {
+        border: solid $bg-deepgray-border 1px;
+      }
+    }
+  }
+}
+
+.view-input-btn {
+  display: inline-block;
+  margin-left: 10px;
+  min-width: 80px;
+  a {
+    height: 39px;
+    line-height: 26px !important;
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+    color: $bg-white;
+    background-color: $bg-red;
+    border-color: $bg-red;
+    -webkit-box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    border-radius: 8px;
+    &:hover {
+      color: $bg-white;
+      background-color: $bg-black;
+      border-color: $bg-black;
+    }
+  }
+}

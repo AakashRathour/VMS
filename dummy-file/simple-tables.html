@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from technext.github.io/ruang-admin/simple-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 10:18:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="img/logo/logo.png" rel="icon">
+  <title>RuangAdmin - Simple Tables</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap DatePicker -->  
+  <link href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" >
+
+
+  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <link href="css/vms-dashboard/custom.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index-2.html">
+        <div class="sidebar-brand-icon">
+          <img src="img/logo/logo2.png">
+        </div>
+        <div class="sidebar-brand-text mx-3">RuangAdmin</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item">
+        <a class="nav-link" href="index-2.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="far fa-fw fa-window-maximize"></i>
+          <span>Bootstrap UI</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Bootstrap UI</h6>
+            <a class="collapse-item" href="alerts.html">Alerts</a>
+            <a class="collapse-item" href="buttons.html">Buttons</a>
+            <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
+            <a class="collapse-item" href="modals.html">Modals</a>
+            <a class="collapse-item" href="popovers.html">Popovers</a>
+            <a class="collapse-item" href="progress-bar.html">Progress Bars</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
+          aria-controls="collapseForm">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>Forms</span>
+        </a>
+        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Forms</h6>
+            <a class="collapse-item" href="form_basics.html">Form Basics</a>
+            <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
+          aria-controls="collapseTable">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Tables</span>
+        </a>
+        <div id="collapseTable" class="collapse show" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Tables</h6>
+            <a class="collapse-item active" href="simple-tables.html">Simple Tables</a>
+            <a class="collapse-item" href="datatables.html">DataTables</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ui-colors.html">
+          <i class="fas fa-fw fa-palette"></i>
+          <span>UI Colors</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Examples
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
+          aria-controls="collapsePage">
+          <i class="fas fa-fw fa-columns"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Example Pages</h6>
+            <a class="collapse-item" href="login.html">Login</a>
+            <a class="collapse-item" href="register.html">Register</a>
+            <a class="collapse-item" href="404.html">404 Page</a>
+            <a class="collapse-item" href="blank.html">Blank Page</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version" id="version-ruangadmin"></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span class="badge badge-warning badge-counter">2</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/man.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                      having.</div>
+                    <div class="small text-gray-500">Udin Cilok · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/girl.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-default"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
+                      say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Jaenab · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks fa-fw"></i>
+                <span class="badge badge-success badge-counter">3</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Task
+                </h6>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Design Button
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Make Beautiful Transitions
+                      <div class="small float-right"><b>30%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Create Pie Chart
+                      <div class="small float-right"><b>75%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">View All Taks</a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">Maman Ketoprak</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">View Leads</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active" aria-current="page">View Leads</li>
+            </ol>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 mb-4">
+              <!-- Simple Tables -->
+              <div class="card">
+                <div class="card-header">
+                  <!-- Accordion Tables start --> 
+                  <div class="acc-container"> 
+                    <div class="acc">
+                      <div class="acc-head">
+                        <h6>Filter Panel</h6>
+                      </div>
+                          
+                      <div class="table-block table-block-features acc-content">
+                          
+                        <form>
+
+                          <div class="viewlead-wrapper">
+
+          <!-- accordion demo -->
+          <div class="accordion lead-panel-accordion" id="faq">
+
+                <!-- Card 1 -->
+                <div class="card">
+                  <div class="card-header" id="faqhead1">
+                    <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
+                      aria-expanded="true" aria-controls="faq1">Application Details</a>
+                  </div>
+
+                  <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq">
+                    <div class="card-body">
+                      
+                      <div class="viewlead-inner">
+                        <!-- Product type -->
+                        <div class="form-group">
+                          <label for="select2Multiple">Product type</label>
+                          <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                            id="select2Multiple">
+                            <option value="">Product type</option>
+                            <option value="Tractor" selected>Tractor</option>
+                            <option value="Truck">Truck</option>
+                            <option value="Bike">Bike</option>
+                            <option value="Infra">Infra</option>
+                          </select>
+                        </div>
+                        <!-- Purchase type -->
+                        
+                        <div class="form-group">
+                          <label for="select3Multiple">Purchase type</label>
+                          <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                            id="select3Multiple">
+                            <option value="">Purchase type</option>
+                            <option value="Customer Sale" selected>Customer Sale</option>
+                            <option value="Bank Auction">Bank Auction</option>
+                            <option value="Dealership Auction">Dealership Auction</option>
+                            <option value="Dealership Sale">Dealership Sale</option>
+                          </select>
+                        </div>
+                        
+                        <!-- Lead status -->                              
+                        <div class="form-group">
+                          <label for="select4Multiple">Lead status</label>
+                          <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                            id="select4Multiple">
+                            <option value="">Lead status</option>
+                            <option value="Lead" selected>Lead</option>
+                            <option value="Booked">Booked</option>
+                            <option value="Booked and Verified">Booked and Verified</option>
+                            <option value="Payment Requested etc">Payment Requested etc</option>
+                          </select>
+                        </div>
+
+                        <!-- Lead Substatus -->                                                         
+                        <div class="form-group">
+                          <label for="select5Multiple">Lead Substatus</label>
+                          <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                            id="select5Multiple">
+                            <option value="">Lead Substatus</option>
+                            <option value="Vehicle Lead" selected>Vehicle Lead</option>
+                            <option value="Deal rejected">Deal rejected</option>
+                            <option value="Deal Approved etc">Deal Approved etc</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="card-header" id="faqhead2">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                      aria-expanded="true" aria-controls="faq2">Owner Location</a>
+                  </div>
+
+                  <div id="faq2" class="collapse show" aria-labelledby="faqhead2" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Owner Location Start -->
+                     <div class="viewlead-inner">
+                      <!-- Pincode type -->
+                      <div class="form-group">
+                        <label for="select6Multiple">Pincode</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select6Multiple">
+                          <option value="">Pincode</option>
+                          <option value="012345">012345</option>
+                          <option value="121212">121212</option>
+                          <option value="131514">131514</option>
+                          <option value="108525">108525</option>
+                        </select>
+                      </div>
+                      <!-- State -->
+                      
+                      <div class="form-group">
+                        <label for="select7Multiple">State</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select7Multiple">
+                          <option value="">State</option>
+                          <option value="Chandigarh">Chandigarh</option>
+                          <option value="
+                          Uttar Pradesh">
+                            Uttar Pradesh</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Punjab">Punjab</option>
+                        </select>
+                      </div>
+                      
+                      <!-- District -->                              
+                      <div class="form-group">
+                        <label for="select8Multiple">District</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select8Multiple">
+                          <option value="">District</option>
+                          <option value="Bareilly">Bareilly</option>
+                          <option value="Allahabad">Allahabad</option>
+                          <option value="Ayodhya">Ayodhya</option>
+                          <option value="Gorakhpur">Gorakhpur</option>
+                        </select>
+                      </div>
+
+                      <!-- Tehsil -->                                                         
+                      <div class="form-group">
+                        <label for="select9Multiple">Tehsil</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select9Multiple">
+                          <option value="">Tehsil</option>
+                          <option value="Bareilly">Bareilly</option>
+                          <option value="Aonla">Aonla</option>
+                          <option value="Nawabganj">Nawabganj</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead3">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                      aria-expanded="true" aria-controls="faq3">Vehicle Details</a>
+                  </div>
+
+                  <div id="faq3" class="collapse show" aria-labelledby="faqhead3" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Vehicle Details Start -->
+
+                     <div class="viewlead-inner">
+                      
+                      <!-- Product type -->
+                      <div class="form-group">
+                        <label for="select10Multiple">Vehicle Make</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select10Multiple">
+                          <option value="">Vehicle Make</option>
+                          <option value="Tractor">Tractor</option>
+                          <option value="Truck">Truck</option>
+                          <option value="Bike">Bike</option>
+                          <option value="Infra">Infra</option>
+                        </select>
+                      </div>
+                      <!-- Purchase type -->
+                      
+                      <div class="form-group">
+                        <label for="select11Multiple">Vehicle Model</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select11Multiple">
+                          <option value="">Vehicle Model</option>
+                          <option value="Customer Sale">Customer Sale</option>
+                          <option value="Bank Auction">Bank Auction</option>
+                          <option value="Dealership Auction">Dealership Auction</option>
+                          <option value="Dealership Sale">Dealership Sale</option>
+                        </select>
+                      </div>
+                      
+                      <!-- Lead status -->                              
+                      <div class="form-group">
+                        <label for="select12Multiple">Vehicle Fuel type</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select12Multiple">
+                          <option value="">Vehicle Fuel type</option>
+                          <option value="Lead">Petrol</option>
+                          <option value="Diesel">Diesel</option>
+                          <option value="CNG">CNG</option>
+                        </select>
+                      </div>
+
+                      <!-- Lead Substatus -->                                                         
+                      <div class="form-group">
+                        <label for="select13Multiple">Vehicle Color</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select13Multiple">
+                          <option value="">Vehicle Color</option>
+                          <option value="red">Red</option>
+                          <option value="Green">Green</option>
+                          <option value="Blue">Blue</option>
+                        </select>
+                      </div>
+                      
+                      
+                      <!-- Pincode type -->
+                      <div class="form-group">
+                        <label for="select14Multiple">Pincode</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select14Multiple">
+                          <option value="">Pincode</option>
+                          <option value="012345">012345</option>
+                          <option value="121212">121212</option>
+                          <option value="131514">131514</option>
+                          <option value="108525">108525</option>
+                        </select>
+                      </div>
+                      <!-- State -->
+                      
+                      <div class="form-group">
+                        <label for="select15Multiple">State</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select15Multiple">
+                          <option value="" disabled>State</option>
+                          <option value="Chandigarh">Chandigarh</option>
+                          <option value="
+                          Uttar Pradesh">
+                            Uttar Pradesh</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Punjab">Punjab</option>
+                        </select>
+                      </div>
+                      
+                      <!-- District -->                              
+                      <div class="form-group">
+                        <label for="select16Multiple">District</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select16Multiple">
+                          <option value="" disabled>District</option>
+                          <option value="Bareilly">Bareilly</option>
+                          <option value="Allahabad">Allahabad</option>
+                          <option value="Ayodhya">Ayodhya</option>
+                          <option value="Gorakhpur">Gorakhpur</option>
+                        </select>
+                      </div>
+
+                      <!-- Tehsil -->                                                         
+                      <div class="form-group">
+                        <label for="select17Multiple">Tehsil</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select17Multiple">
+                          <option value="Bareilly">Bareilly</option>
+                          <option value="Aonla">Aonla</option>
+                          <option value="Nawabganj">Nawabganj</option>
+                        </select>
+                      </div>
+                      
+
+
+
+                    </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead4">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                      aria-expanded="true" aria-controls="faq4">Vehicle Conditions</a>
+                  </div>
+
+                  <div id="faq4" class="collapse show" aria-labelledby="faqhead4" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Vehicle Conditions Start -->
+
+                     <div class="viewlead-inner">
+                      <!-- Total Hour -->
+                      <div class="form-group">
+                        <label for="select18Multiple">Total Hours Utilization</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select18Multiple">
+                          <option value="" disabled>Total Hours</option>
+                          <option value="Tractor">1 Hour</option>
+                          <option value="Truck">2 Hour</option>
+                          <option value="Bike">3 Hour</option>
+                          <option value="Infra">4 Hour</option>
+                        </select>
+                      </div>
+                      <!-- Range Select -->
+                      <div class="form-group" id="simple-date4">
+                        <label for="dateRangePicker">Range Select</label>
+                        <div class="input-daterange input-group">
+                          <input type="text" class="input-sm form-control" name="start" />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">to</span>
+                          </div>
+                          <input type="text" class="input-sm form-control" name="end" />
+                        </div>
+                      </div>
+                      <!-- Tyre Condition -->
+                      <div class="form-group">
+                        <label for="select19Multiple">Tyre Condition</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select19Multiple">
+                          <option value="Condition1">Condition 1</option>
+                          <option value="Condition2">Condition 2</option>
+                          <option value="Condition3">Condition 3</option>
+                          <option value="Condition4">Condition 4</option>
+                        </select>
+                      </div>
+                      <!-- Engine Condition -->
+                      <div class="form-group">
+                        <label for="select20Multiple">Engine Condition</label>
+                        <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                          id="select20Multiple">
+                          <option value="Engine1">Engine 1</option>
+                          <option value="Engine2">Engine 2</option>
+                          <option value="Engine3">Engine 3</option>
+                          <option value="Engine4">Engine 4</option>
+                        </select>
+                      </div>
+
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead5">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                      aria-expanded="true" aria-controls="faq5">Vehicle Status</a>
+                  </div>
+
+                  <div id="faq5" class="collapse show" aria-labelledby="faqhead5" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Vehicle Status Start -->
+
+                     <div class="viewlead-inner">
+                      <!-- Is Vehicle Financed? -->
+                      <div class="form-group">
+                        <label for="select21SinglePlaceholder">Is Vehicle Financed?</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select21SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+                      <!-- Is vehicle Insured? -->
+                      <div class="form-group">
+                        <label for="select22SinglePlaceholder">Is vehicle Insured?</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select22SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead6">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq6"
+                      aria-expanded="true" aria-controls="faq6">Deal Details</a>
+                  </div>
+
+                  <div id="faq6" class="collapse show" aria-labelledby="faqhead6" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Deal Details Start -->
+
+                     <div class="viewlead-inner">
+                      <!-- Is Vehicle Financed? -->
+                      <div class="form-group">
+                        <label for="select23SinglePlaceholder">Deal Payment type</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select23SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="Pay-in-Full">Pay in Full</option>
+                          <option value="Pay-in-parts">Pay in parts</option>
+                        </select>
+                      </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead7">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq7"
+                      aria-expanded="true" aria-controls="faq7">Lead Verification Details</a>
+                  </div>
+
+                  <div id="faq7" class="collapse show" aria-labelledby="faqhead7" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Lead Verification Details -->
+
+                     <div class="viewlead-inner">
+                      <!-- Lead details status -->
+                      <div class="form-group">
+                        <label for="select24SinglePlaceholder">Lead details status</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select24SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      <!-- Lead Images status -->
+                      <div class="form-group">
+                        <label for="select25SinglePlaceholder">Lead Images status</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select25SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      <!-- Lead Documents -->
+                      <div class="form-group">
+                        <label for="select26SinglePlaceholder">Lead Documents</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select26SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      <!-- Mark Each document as Hard copy recevied -->
+                      <div class="form-group">
+                        <label for="select27SinglePlaceholder">Mark Each document as Hard copy recevied</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select27SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead8">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq8"
+                      aria-expanded="true" aria-controls="faq8">Finance Details</a>
+                  </div>
+
+                  <div id="faq8" class="collapse show" aria-labelledby="faqhead8" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Finance Details -->
+
+                     <div class="viewlead-inner">
+                      <!-- Lead details status -->
+                      <div class="form-group">
+                        <label for="select28SinglePlaceholder">Select payment type</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select28SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="NEFT">NEFT</option>
+                          <option value="CASH">Cash</option>
+                          <option value="FINANCE">Finance</option>
+                        </select>
+                      </div>
+                      
+                      <!-- Range Select -->
+                      <div class="form-group" id="simple-date4">
+                        <label for="dateRangePicker">Range Select</label>
+                        <div class="input-daterange input-group">
+                          <input type="text" class="input-sm form-control" name="start" />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">to</span>
+                          </div>
+                          <input type="text" class="input-sm form-control" name="end" />
+                        </div>
+                      </div>
+
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 9 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead9">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq9"
+                      aria-expanded="true" aria-controls="faq9">Center Details</a>
+                  </div>
+
+                  <div id="faq9" class="collapse show" aria-labelledby="faqhead9" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Center Details -->
+
+                     <div class="viewlead-inner">
+                      <!-- Lead details status -->
+                      <div class="form-group">
+                        <label for="select29SinglePlaceholder">Select the alloted center</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select29SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="Alwar">Alwar</option>
+                          <option value="Noida">Noida</option>
+                          <option value="Delhi">Delhi</option>
+                        </select>
+                      </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 10 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead10">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq10"
+                      aria-expanded="true" aria-controls="faq10">Logistics Details</a>
+                  </div>
+
+                  <div id="faq10" class="collapse show" aria-labelledby="faqhead10" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     <!-- Logistics Details -->
+
+                     <div class="viewlead-inner">
+                      
+                      <div class="form-group">
+                        <label for="select30SinglePlaceholder">Release order document</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select30SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="select30SinglePlaceholder">Select the Driver</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select30SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="Raghu2">Ram Singh</option>
+                          <option value="Raghu1">Shyam Singh</option>
+                          <option value="Raghu">Raghu</option>
+                        </select>
+                      </div>
+                      <!-- Range Select -->
+                      <div class="form-group" id="simple-date4">
+                        <label for="dateRangePicker">Range Select</label>
+                        <div class="input-daterange input-group">
+                          <input type="text" class="input-sm form-control" name="start" />
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">to</span>
+                          </div>
+                          <input type="text" class="input-sm form-control" name="end" />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="select31SinglePlaceholder">Is parking Charges?</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select31SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="select32SinglePlaceholder">Is Fuel Charges?</label>
+                        <select class="select2-single-placeholder form-control" name="state" id="select32SinglePlaceholder">
+                          <option value="">Select</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </div>
+
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- Card 11 -->
+
+                <div class="card">
+                  <div class="card-header" id="faqhead11">
+                    <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq11"
+                      aria-expanded="true" aria-controls="faq11">FIlter by date</a>
+                  </div>
+
+                  <div id="faq11" class="collapse show" aria-labelledby="faqhead11" data-parent="#faq">
+                    
+                    <div class="card-body">
+                     
+                       <!-- Logistics Details -->
+
+                       <div class="viewlead-inner">
+                        <div class="filter-date">
+                         <div class="form-group">
+                           <label for="select33SinglePlaceholder">Sort By</label>
+                           <select class="select2-single-placeholder form-control" name="state" id="select33SinglePlaceholder">
+                             <option value="">Selected</option>
+                             <option value="az">A To Z</option>
+                             <option value="za">Z To A</option>
+                             <option value="high">High to Low</option>
+                             <option value="low">Low to High</option>
+                           </select>
+                         </div>
+                       </div> 
+                         <div class="form-group">
+                         <div class="custom-control custom-radio">
+                           <div class="mb-btm">
+                             <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                             <label class="custom-control-label" for="customRadio1">Lead created by date range</label>
+                           </div>  
+                           <div class="form-group" id="simple-date4">
+                             <div class="input-daterange input-group">
+                               <input type="text" class="input-sm form-control" name="start" />
+                               <div class="input-group-prepend">
+                                 <span class="input-group-text">to</span>
+                               </div>
+                               <input type="text" class="input-sm form-control" name="end" />
+                             </div>
+                           </div>
+                         </div>
+                         <div class="custom-control custom-radio">
+                           <div class="mb-btm">
+                           <input type="radio" id="dateRangePicker" name="customRadio" class="custom-control-input">
+                           <label class="custom-control-label" for="dateRangePicker">Lead Updated by date range</label>
+                         </div>
+                           <div class="form-group" id="simple-date4">
+                             <div class="input-daterange input-group">
+                               <input type="text" class="input-sm form-control" name="start" />
+                               <div class="input-group-prepend">
+                                 <span class="input-group-text">to</span>
+                               </div>
+                               <input type="text" class="input-sm form-control" name="end" />
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+
+                         <div class="form-group">
+                           <label for="exampleInputEmail1">Employee Code</label>
+                           <input class="form-control  mb-3" type="text" placeholder="">
+                         </div>
+
+
+                         </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="btn-group-wrap">
+                <button type="submit" class="btn btn-dark">RESET</button>
+                <button type="submit" class="btn btn-primary">APPLY</button>
+              </div>  
+          </div>
+
+                          
+                        </form>
+
+                      </div>    
+                  </div>
+                  </div>
+                  <!-- Accordion Tables End --> 
+                  
+                </div> 
+                <div class="table-responsive leadtable">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Lead ID</th>
+                        <th>Owner Name</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Product</th>
+                        <th>State</th>
+                        <th>District</th>
+                        <th>Tehsil</th>
+                        <th>Source</th>
+                        <th>Status</th>
+                        <th>Substatus</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#">RJXW02YK</a></td>
+                        <td>Udin Wayang</td>
+                        <td>Nasi Padang</td>
+                        <td>Massey Ferguson</td>
+                        <td>Massey Ferguson 241 DI MAHA SHAKTI</td>
+                        <td>Tractor</td>
+                        <td>Rajasthan</td>
+                        <td>Jaipur</td>
+                        <td>Bank Auction</td>
+                        <td><span class="badge badge-success">Delivered</span></td>
+                        <td>Delivery Done</td>
+                        <td><a href="#" class="btn btn-sm btn-danger">View</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">MPY20FWZ</a></td>
+                        <td>Jaenab Bajigur</td>
+                        <td>Gundam 90' Edition</td>
+                        <td>Massey Ferguson</td>
+                        <td>Massey Ferguson 241 DI MAHA SHAKTI</td>
+                        <td>Tractor</td>
+                        <td>Rajasthan</td>
+                        <td>Jaipur</td>
+                        <td>Bank Auction</td>
+                        <td><span class="badge badge-warning">Shipping</span></td>
+                        <td>Delivery Pending</td>
+                        <td><a href="#" class="btn btn-sm btn-danger">View</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">JKL8H4OE</a></td>
+                        <td>Rivat Mahesa</td>
+                        <td>Oblong T-Shirt</td>
+                        <td>Massey Ferguson</td>
+                        <td>Massey Ferguson 241 DI MAHA SHAKTI</td>
+                        <td>Tractor</td>
+                        <td>Rajasthan</td>
+                        <td>Jaipur</td>
+                        <td>Bank Auction</td>
+                        <td><span class="badge badge-danger">Pending</span></td>
+                        <td>Approval Rejected</td>
+                        <td><a href="#" class="btn btn-sm btn-danger">View</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">CHEIF27S</a></td>
+                        <td>Indri Junanda</td>
+                        <td>Hat Rounded</td>
+                        <td>Massey Ferguson</td>
+                        <td>Massey Ferguson 241 DI MAHA SHAKTI</td>
+                        <td>Tractor</td>
+                        <td>Rajasthan</td>
+                        <td>Jaipur</td>
+                        <td>Bank Auction</td>
+                        <td><span class="badge badge-info">Processing</span></td>
+                        <td>Payment Processed</td>
+                        <td><a href="#" class="btn btn-sm btn-danger">View</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">RJ28FHD83</a></td>
+                        <td>Udin Cilok</td>
+                        <td>Baby Powder</td>
+                        <td>Massey Ferguson</td>
+                        <td>Massey Ferguson 241 DI MAHA SHAKTI</td>
+                        <td>Tractor</td>
+                        <td>Rajasthan</td>
+                        <td>Jaipur</td>
+                        <td>Bank Auction</td>
+                        <td><span class="badge badge-success">Delivered</span></td>
+                        <td>Assignment awaited</td>
+                        <td><a href="#" class="btn btn-sm btn-danger">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </div>
+          </div>
+          <!--Row-->
+
+          <!-- Modal Logout -->
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure you want to logout?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                  <a href="login.html" class="btn btn-primary">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!---Container Fluid-->
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
+              <b><a href="https://indrijunanda.gitlab.io/" target="_blank">indrijunanda</a></b>
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/ruang-admin.min.js"></script>
+
+  <!-- Select2 -->
+  <script src="vendor/select2/dist/js/select2.min.js"></script>
+  <!-- Bootstrap Datepicker -->
+  <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Bootstrap Touchspin -->
+  <script src="vendor/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js"></script>
+  <!-- ClockPicker -->
+  <script src="vendor/clock-picker/clockpicker.js"></script>
+  <!-- RuangAdmin Javascript -->
+  <script src="js/ruang-admin.min.js"></script>
+  <!-- Javascript for this page -->
+  <script>
+    $(document).ready(function () {
+
+
+      $('.select2-single').select2();
+
+      // Select2 Single  with Placeholder
+      $('.select2-single-placeholder').select2({
+        placeholder: "Select a Dropdown",
+        allowClear: true
+      });      
+
+      // Select2 Multiple
+      $('.select2-multiple').select2();
+
+      // Bootstrap Date Picker
+      $('#simple-date1 .input-group.date').datepicker({
+        format: 'dd/mm/yyyy',
+        todayBtn: 'linked',
+        todayHighlight: true,
+        autoclose: true,        
+      });
+
+      $('#simple-date2 .input-group.date').datepicker({
+        startView: 1,
+        format: 'dd/mm/yyyy',        
+        autoclose: true,     
+        todayHighlight: true,   
+        todayBtn: 'linked',
+      });
+
+      $('#simple-date3 .input-group.date').datepicker({
+        startView: 2,
+        format: 'dd/mm/yyyy',        
+        autoclose: true,     
+        todayHighlight: true,   
+        todayBtn: 'linked',
+      });
+
+      $('#simple-date4 .input-daterange').datepicker({        
+        format: 'dd/mm/yyyy',        
+        autoclose: true,     
+        todayHighlight: true,   
+        todayBtn: 'linked',
+      });    
+
+      // TouchSpin
+
+      $('#touchSpin1').TouchSpin({
+        min: 0,
+        max: 100,                
+        boostat: 5,
+        maxboostedstep: 10,        
+        initval: 0
+      });
+
+      $('#touchSpin2').TouchSpin({
+        min:0,
+        max: 100,
+        decimals: 2,
+        step: 0.1,
+        postfix: '%',
+        initval: 0,
+        boostat: 5,
+        maxboostedstep: 10
+      });
+
+      $('#touchSpin3').TouchSpin({
+        min: 0,
+        max: 100,
+        initval: 0,
+        boostat: 5,
+        maxboostedstep: 10,
+        verticalbuttons: true,
+      });
+
+      $('#clockPicker1').clockpicker({
+        donetext: 'Done'
+      });
+
+      $('#clockPicker2').clockpicker({
+        autoclose: true
+      });
+
+      let input = $('#clockPicker3').clockpicker({
+        autoclose: true,
+        'default': 'now',
+        placement: 'top',
+        align: 'left',
+      });
+
+      $('#check-minutes').click(function(e){        
+        e.stopPropagation();
+        input.clockpicker('show').clockpicker('toggleView', 'minutes');
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+    $('.acc-head').on('click', function() {
+        if($(this).hasClass('active')) {
+          $(this).siblings('.acc-content').slideUp();
+          $(this).removeClass('active');
+        }
+        else {
+          $('.acc-content').slideUp();
+          $('.acc-head').removeClass('active');
+          $(this).siblings('.acc-content').slideToggle();
+          $(this).toggleClass('active');
+        }
+    });     
+    });
+    </script>
+
+</body>
+
+
+<!-- Mirrored from technext.github.io/ruang-admin/simple-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 10:18:19 GMT -->
+</html>

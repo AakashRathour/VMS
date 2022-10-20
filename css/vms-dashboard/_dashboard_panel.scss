@@ -1,0 +1,229 @@
+.lead-wrapper {
+  .underline-class {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    @media (max-width: 500px) {
+      gap: 8px;
+    }
+    a {
+      font-size: 14px;
+      text-decoration: underline;
+      @media (max-width: 500px) {
+        font-size: 11px;
+      }
+    }
+  }
+  .lead-aside {
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .lead-auction {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $bg-lightgray;
+
+      .lead-brand {
+        flex-basis: 35%;
+        margin-right: 15px;
+
+        @media (max-width: 767px) {
+          flex-basis: auto;
+          margin-right: 0;
+          order: 2;
+        }
+
+        .lead-brand-img {
+          height: 90px;
+          width: 90px;
+          border: 1px solid $bg-lightgray;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+
+          @media (max-width: 767px) {
+            width: 135px;
+          }
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+      }
+
+      .lead-content {
+        flex-basis: 63%;
+
+        @media (max-width: 767px) {
+          flex-basis: 68%;
+          padding-left: 5px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 1.8;
+          white-space: nowrap;
+          color: $bg-black;
+        }
+      }
+    }
+
+    .lead-activity {
+      background: $bg-lightgray;
+
+      .activity-title {
+        background: $bg-white;
+        position: relative;
+
+        h6 {
+          margin: 0;
+          padding: 10px 40px 8px 10px;
+          position: relative;
+          cursor: pointer;
+          font-weight: 700;
+
+          &:after {
+            content: "\f106";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            right: 15px;
+            color: $bg-gray;
+
+            @media (max-width: 767px) {
+              content: "\f107";
+            }
+          }
+        }
+      }
+    }
+
+    .activity-togle {
+      padding: 1.5rem 0.7rem 1rem;
+      height: calc(100vh - 40vh);
+      overflow-y: scroll;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      &::-webkit-scrollbar {
+        width: 0em;
+        height: 2em;
+      }
+
+      .activity-timeline-wrap {
+        position: relative;
+
+        .activity-timeline-in {
+          padding-bottom: 3rem;
+
+          @media (max-width: 767px) {
+            padding-bottom: 1.5rem;
+          }
+
+          &::after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            top: 3px;
+            left: 7px;
+            border-right: 3px dashed $bg-red;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          .activity-timeline {
+            padding-left: 30px;
+            position: relative;
+
+            &:before {
+              content: "";
+              width: 8px;
+              height: 8px;
+              background: $bg-red;
+              position: absolute;
+              top: 4px;
+              left: 4px;
+              border-radius: 50%;
+              display: block;
+              z-index: 2;
+            }
+
+            &:after {
+              content: "";
+              width: 16px;
+              height: 16px;
+              background: $bg-white;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 50%;
+              display: block;
+              z-index: 1;
+              box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+            }
+
+            .activity-datetime {
+              padding-bottom: 10px;
+
+              p {
+                font-size: 13px;
+                font-weight: 700;
+              }
+            }
+
+            .activity-status {
+              p {
+                font-size: 14px;
+                margin-bottom: 6px;
+              }
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .lead-activity.active .activity-title h6:after {
+      content: "\f107";
+
+      @media (max-width: 767px) {
+        content: "\f106";
+      }
+    }
+  }
+  .lead-article {
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+      flex-grow: initial;
+      width: 100%;
+    }
+  }
+  &.lead-wrapper-auction {
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+}
+
+

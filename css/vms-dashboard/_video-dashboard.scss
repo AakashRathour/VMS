@@ -1,0 +1,106 @@
+// video css
+.explainer-inner-video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: $bg-white;
+  margin-bottom: 30px;
+  @media (max-width: 1400px) {
+    gap: 18px;
+  }
+  @media (max-width: 1272px) {
+    gap: 14px;
+  }
+  @media (max-width: 1055px) {
+    gap: 15px 0;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .explainer-inner-trim {
+    flex-basis: 32%;
+    @media (max-width: 1272px) {
+      flex-basis: 49%;
+    }
+    @media (max-width: 650px) {
+      flex-basis: 100%;
+    }
+    .explainer-video-inner {
+      border-radius: 5px;
+      position: relative;
+      max-width: 100%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      overflow: hidden;
+      .exp-img img {
+        width: 100%;
+      }
+      .explainer-video-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        width: 55px;
+        height: 54px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: 999;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0s !important;
+        @media (max-width: 900px) {
+          width: 35px;
+          height: 34px;
+        }
+      }
+      .video-popup-container {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        iframe {
+          width: 100%;
+          min-height: 100%;
+          position: absolute;
+          top: 0;
+        }
+        .close-video {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: $bg-red;
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          border-radius: 50%;
+          line-height: 27px;
+          border-top-right-radius: 0;
+          cursor: pointer;
+          i {
+            color: $bg-white;
+          }
+        }
+      }
+    }
+    .explainer-title {
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 1px 2px 0px rgba(36, 39, 44, 0.15);
+      background: $bg-white;
+      h5 {
+        margin: 0;
+        color: $bg-black;
+        font-weight: 700;
+        font-size: 16px;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

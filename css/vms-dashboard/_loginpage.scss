@@ -1,0 +1,12 @@
+.container-login{
+    .card.login-form-radius {
+        max-width: 480px;
+        margin: auto;
+        @media(max-width:550px){
+            max-width: 350px;
+            .login-form {
+                padding: 20px 20px!important;
+            }
+        }
+    }
+} 

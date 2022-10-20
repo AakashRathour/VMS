@@ -1,0 +1,159 @@
+.col-chart {
+  .chart-col-row {
+    gap: 30px 0px;
+    .chart-col-wide {
+      flex-basis: 100%;
+    }
+    .chart-col-half {
+      flex-basis: 49%;
+      max-width: 50%;
+      @media (max-width: 991px) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .chart-pie {
+        #myChart {
+          @media (max-width: 991px) {
+            max-height: 280px;
+          }
+        }
+      }
+    }
+    .card-header:first-child {
+      @media (max-width: 500px) {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 10px;
+        .cart-text {
+          flex-basis: 100%;
+          text-align: center;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .mb-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+.modal-pop a {
+  display: flex;
+  align-items: center;
+  img {
+    display: inline-block;
+    max-width: 14px;
+    filter: invert(1);
+    margin: 0 8px 0 5px;
+  }
+}
+.map-ip {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .map-india {
+    flex-basis: 50%;
+    position: relative;
+    @media (max-width: 1199px) {
+      flex-basis: 100%;
+      div#map {
+        max-width: 400px;
+        margin: auto;
+      }
+    }
+    @media (max-width: 480px) {
+      div#map {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+    div#map_inner [title="For evaluation use only."] {
+      text-indent: -9999999999px;
+    }
+    div#map_access {
+      text-indent: -999999999px !important;
+      display: none !important;
+    }
+  }
+  .map-content {
+    flex-basis: 47%;
+    @media (max-width: 1489px) {
+      flex-basis: 49%;
+    }
+    @media (max-width: 1199px) {
+      flex-basis: 100%;
+    }
+  }
+}
+.table-tool-wrap {
+  display: none;
+  th,
+  td {
+    font-size: 14px;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  @media (max-width: 1199px) {
+    white-space: nowrap;
+  }
+}
+.map-cart-btn-wrap {
+  .btn-min-w {
+    min-width: 90px;
+    text-align: center;
+    font-size: 14px;
+    @media (max-width: 1199px) {
+      min-width: 80px;
+      font-size: 14px;
+    }
+  }
+}
+
+// .chart-col-row {
+// gap: 30px 0px;
+// .chart-col-wide {
+//     flex-basis: 100%;
+// }
+//   .chart-col-half {
+//     flex-basis: 49%;
+//     max-width: 50%;
+//     @media (max-width: 991px) {
+//       flex-basis: 100%;
+//       max-width: 100%;
+//     }
+//   }
+//   .card-header:first-child {
+//     @media (max-width: 500px) {
+//       flex-wrap: wrap;
+//       justify-content: center !important;
+//       gap: 10px;
+//       .cart-text {
+//         flex-basis: 100%;
+//         text-align: center;
+//       }
+//     }
+//   }
+//   @media (max-width: 767px) {
+//     .mb-inner {
+//       padding-left: 15px;
+//       padding-right: 15px;
+//     }
+//   }
+// }
+@media (max-width: 991px) {
+  .chart-pie #myChart {
+    max-height: 280px;
+  }
+}
+
+// Popup Model
+
+.viewlead-inner-map.card {
+  flex-direction: row;
+}

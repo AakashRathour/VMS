@@ -1,0 +1,526 @@
+.map-content{
+    .tooltip-raj  {
+      .dot-wrap-tool{
+      .dot-tool {
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          box-shadow: 0px 0px 7px 3px rgba(234,236,244,0.6);
+          border-radius: 50%;
+          color: #fff;
+          font-size: 10px;
+          line-height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+          .tooltip {
+              position: relative;
+              display: inline-block;
+              opacity: 1;
+              &:hover{
+                  .tooltiptext {
+                      visibility: visible;
+                  }
+              }
+              .tooltiptext {
+                  visibility: hidden;
+                  min-width: 260px;
+                  white-space: nowrap;
+                  background-color: #fff;
+                  box-shadow: 0px 0px 40px rgba(0,0,0,0.8);
+                  color: #000;
+                  border-radius: 5px;
+                  padding: 12px 15px 5px;
+                    text-align:left;
+                  position: absolute;
+                  top: 25px;
+                  left: -10px;
+                  z-index: 1;
+                  &:before {
+                      content: "";
+                      position: absolute;
+                      top: -10px;
+                      left: 4px;
+                      border-top: 0px solid #000;
+                      border-bottom: 15px solid #fff;
+                      border-left: 12px solid transparent;
+                      border-right: 12px solid transparent;
+                  }
+                  p{
+                      margin:0; 
+                      font-size:16px;
+                      margin-bottom:5px;
+                  }
+              }
+              span.digit-tool {
+                  color: transparent;
+                  width: 13px;
+                  height: 13px;
+                  display: block;
+                  border-radius: 50%;
+              }
+            }
+            
+          }
+      .dot-tool.tooltip-raj-first{
+          top: 30%;
+          left: 121px;
+      }
+      .dot-tool.tooltip-raj-second{
+          top: 35%;
+          left: 67px;
+      }
+      .dot-tool.tooltip-raj-third{
+          top: 40%;
+          left: 121px;
+      }
+      .dot-tool.tooltip-raj-fourth{
+          top: 35%;
+          left: 180px;
+      }
+      .dot-tool.tooltip-raj-five{
+          top: 48%;
+          left: 175px;
+      }
+      .dot-tool.tooltip-raj-six{
+          top: 44%;
+          left: 285px;
+      }
+      .dot-tool.tooltip-raj-seven{
+          top: 57%;
+          left: 215px;
+      }
+      .dot-tool.tooltip-raj-eight{
+          top: 63%;
+          left: 130px;
+      }
+      .dot-tool.tooltip-raj-nine{
+          top: 33%;
+          left: 280px;
+      }
+      .toolhide-content {
+          display: none;
+          position: absolute;
+          background: #fff;
+          width: 345px;
+          text-align: left;
+          z-index: 9;
+          bottom: 0;
+          right: 0;
+          table {
+              background-color: #EAECF4;
+              td,th{
+                  font-size: 13px;
+                  color: #000;
+                  padding: 8px 10px;
+              }
+          }
+      }
+      }
+    }
+  }
+
+//   html
+
+<div class="map-content">
+
+                          <div class="tooltip-raj">
+
+                            <!-- Rajasthan Tooltip Tip -->
+
+                          <!-- 1st Dot   -->
+                           <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-first">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Tariq Aziz 1</p>
+                                  <p><strong>Tehsil :</strong> Jammu</p>
+                                  <p><strong>District :</strong> Kashmir</p>
+                                  <p><strong>State :</strong> Noida</p>
+                                </div>
+                              </div>
+                            </div>  
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                                <table class="table table-hover">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">Date Range</th>
+                                      <td>01/02/2022</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Product Selection</th>
+                                      <td>Tractor</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Purchase type selection</th>
+                                      <td>Cash</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Lead status selection</th>
+                                      <td>Larry</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Lead Sub status selection</th>
+                                      <td>Lead Sub status</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            
+                           </div>
+                            
+                          <!-- 2nd Dot   --> 
+                           <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-second">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                             </div>
+                             <!-- Hide Data -->
+                             <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>02/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                           </div>
+
+                          <!-- 3rd Dot   --> 
+                            <div class="dot-wrap-tool">
+                              <div class="dot-tool tooltip-raj-third">
+                                <div class="tooltip"><span class="digit-tool">1</span>
+                                  <div class="tooltiptext">
+                                    <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                    <p><strong>Tehsil :</strong> Mandawali</p>
+                                    <p><strong>District :</strong> Dehli</p>
+                                    <p><strong>State :</strong> Uttar Pradesh</p>
+                                  </div>
+                                </div>
+  
+                                
+                               </div>
+                               <!-- Hide Data -->
+                               <div class="toolhide-content">
+                                <table class="table table-hover">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">Date Range</th>
+                                      <td>03/01/2022</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Product Selection</th>
+                                      <td>Truck Junction</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Purchase type selection</th>
+                                      <td>Cash</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Lead status selection</th>
+                                      <td>Larry</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Lead Sub status selection</th>
+                                      <td>Lead Sub status</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          <!-- 4th Dot   -->  
+                            <div class="dot-wrap-tool">
+                              <div class="dot-tool tooltip-raj-fourth">
+                                <div class="tooltip"><span class="digit-tool">1</span>
+                                  <div class="tooltiptext">
+                                    <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                    <p><strong>Tehsil :</strong> Mandawali</p>
+                                    <p><strong>District :</strong> Dehli</p>
+                                    <p><strong>State :</strong> Uttar Pradesh</p>
+                                  </div>
+                                </div>
+  
+                                
+                                </div>
+                                <!-- Hide Data -->
+                                <div class="toolhide-content">
+                                <table class="table table-hover">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">Date Range</th>
+                                      <td>04/01/2022</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Product Selection</th>
+                                      <td>Truck Junction</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Purchase type selection</th>
+                                      <td>Cash</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Lead status selection</th>
+                                      <td>Larry</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Lead Sub status selection</th>
+                                      <td>Lead Sub status</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                            <!-- MP Tooltip Tip -->
+                            
+                          <!-- 5th Dot   -->  
+                          <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-five">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                              </div>
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>05/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                            
+                          <!-- 6th Dot   -->
+                          <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-six">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                              </div>
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>06/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                            <!-- Ms Tooltip Tip -->
+                            
+                          <!-- 7th Dot   -->  
+                          <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-seven">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                              </div>
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>07/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                            
+                          <!-- 8th Dot   -->  
+                          <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-eight">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                              </div>
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>08/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                            <!-- Uttar Pradesh Tooltip Tip -->
+
+                          <!-- 9th Dot   -->  
+                          <div class="dot-wrap-tool">
+                            <div class="dot-tool tooltip-raj-eight">
+                              <div class="tooltip"><span class="digit-tool">1</span>
+                                <div class="tooltiptext">
+                                  <p><strong>Vehicle Owner :</strong> Pankaj Gupta 2</p>
+                                  <p><strong>Tehsil :</strong> Mandawali</p>
+                                  <p><strong>District :</strong> Dehli</p>
+                                  <p><strong>State :</strong> Uttar Pradesh</p>
+                                </div>
+                              </div>
+
+                              
+                              </div>
+                              <!-- Hide Data -->
+                              <div class="toolhide-content">
+                              <table class="table table-hover">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Date Range</th>
+                                    <td>09/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Product Selection</th>
+                                    <td>Truck Junction</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Purchase type selection</th>
+                                    <td>Cash</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Lead status selection</th>
+                                    <td>Larry</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Lead Sub status selection</th>
+                                    <td>Lead Sub status</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                          </div>
+  
+                        </div>
