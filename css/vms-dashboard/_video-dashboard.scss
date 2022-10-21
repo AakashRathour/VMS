@@ -73,7 +73,7 @@
           position: absolute;
           top: 0;
           right: 0;
-          background: $bg-red;
+          background: $primaryClr;
           width: 25px;
           height: 25px;
           text-align: center;
@@ -94,7 +94,7 @@
       background: $bg-white;
       h5 {
         margin: 0;
-        color: $bg-black;
+        color: $textClr;
         font-weight: 700;
         font-size: 16px;
         @media (max-width: 767px) {

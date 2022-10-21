@@ -16,6 +16,8 @@
   .filter-map-inner {
     width: 100%;
     .form-control {
+      background-color: $bg-inputField;
+      border-color: $boderClr;
       border-radius: 3px !important;
     }
     .filter-map-fill {
@@ -39,6 +41,26 @@
             }
           }
         }
+        h4 {
+          color: $textClr;
+        }
+        hr {
+          background-color: $boderClr;
+        }
+        .viewlead-inner-map {
+          .form-group {
+            label {
+              color: $textClr;
+            }
+            .input-group {
+              .form-control {
+                background-color: $bg-inputField;
+                border-color: $boderClr;
+              }
+            }
+          }
+        }
+
         @media (max-width: 500px) {
           .btn-min-w {
             min-width: 120px;

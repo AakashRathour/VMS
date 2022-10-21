@@ -15,7 +15,7 @@
       align-items: center;
       width: 45px;
       height: 45px;
-      border: 1px solid $bg-darkgray;
+      border: 1px solid $boderClr;
       text-align: center;
       border-radius: 50%;
       overflow: hidden;
@@ -25,7 +25,7 @@
     }
     .noti-content {
       padding-bottom: 15px;
-      border-bottom: 1px solid $bg-darkgray;
+      border-bottom: 1px solid $boderClr;
       width: 60%;
       @media (max-width: 991px) {
         width: 80%;
@@ -45,10 +45,10 @@
       }
       a {
         text-decoration: none;
-        color: $bg-red;
+        color: $primaryClr;
         transition: 0.3s;
         &:hover {
-          color: $bg-blue;
+          color: $linkClr;
         }
       }
     }

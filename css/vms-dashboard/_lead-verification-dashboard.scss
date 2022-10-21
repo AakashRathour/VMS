@@ -5,7 +5,7 @@
         flex-basis: 27%;
         background: $bg-lightgray;
         text-align: center;
-        border-color: $bg-darkgray !important;
+        border-color: $textClr !important;
         &:first-child {
           flex-basis: 46%;
           background: transparent;
@@ -29,7 +29,7 @@
         border-top: 1px solid;
         border-left: 1px solid;
         border-bottom: 1px solid;
-        border-color: $bg-darkgray;
+        border-color: $textClr;
         border-right: 0;
         &:first-child {
           flex-basis: 46%;
@@ -37,7 +37,7 @@
           padding-left: 40px !important;
         }
         &:last-child {
-          border-right: 1px solid $bg-darkgray;
+          border-right: 1px solid $textClr;
         }
         h6 {
           margin: 0;
@@ -83,6 +83,10 @@
               left: 8px;
             }
           }
+        }
+        .card-detail {
+          background-color: $bg-inputField;
+          color: $textClr;
         }
       }
     }

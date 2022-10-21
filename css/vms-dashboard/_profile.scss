@@ -9,6 +9,7 @@
     background-color: $bg-lightgray;
     h5 {
       font-weight: 700;
+      color: $textClr;
       @media (max-width: 480px) {
         font-size: 17px;
       }
@@ -17,6 +18,7 @@
   .profile-inner {
     .profile-label p {
       font-weight: 600;
+      color: $textClr;
       @media (max-width: 991px) {
         font-size: 14px;
       }
@@ -29,11 +31,15 @@
       }
     }
     .profile-text p {
+      color: $textClr;
       @media (max-width: 991px) {
         font-size: 14px;
       }
       @media (max-width: 575px) {
         margin-bottom: 10px;
+      }
+      a{
+        color: $primaryClr;
       }
     }
     @media (max-width: 575px) {
@@ -76,7 +82,7 @@
       position: absolute;
       bottom: 15px;
       right: 5px;
-      color: $bg-cyanred;
+      color: $textClr;
       transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       &:hover {
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -88,7 +94,7 @@
         font-size: 1.2em;
         &:hover {
           transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          color: $bg-gray;
+          color:$textClr;
         }
       }
     }

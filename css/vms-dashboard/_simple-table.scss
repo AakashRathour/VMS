@@ -62,11 +62,11 @@
       .acc-content {
         display: none;
         padding: 0;
-        border-top: 1px solid $bg-exlightgray;
+        border-top: 1px solid $boderClr;
         .viewlead-wrapper {
           .accordion-panel {
             .card-panel {
-              border-bottom: 1px solid $bg-exlightgray;
+              border-bottom: 1px solid $boderClr;
               .card-title {
                 margin-bottom: 0;
                 padding: 10px 1.25rem;
@@ -88,6 +88,7 @@
                   color: $bg-black;
                 }
                 h6 {
+                  color: $textClr;
                   margin: 0;
                 }
               }
@@ -112,6 +113,7 @@
                     flex-basis: 100%;
                   }
                   label {
+                    color: $textClr;
                     font-size: 14px;
                     @media (max-width: 1450px) {
                       font-size: 12px;
@@ -134,7 +136,7 @@
                   }
                   .form-control {
                     background: transparent;
-                    border: 1px solid $bg-darkgray;
+                    border: 1px solid $boderClr;
                     border-radius: 4px;
                     &:first-child {
                       border-top-right-radius: 0;
@@ -157,14 +159,24 @@
                       flex-basis: calc(100% - 56px);
                     }
                     .select2-selection--multiple {
-                      // height: 40px;
                       min-height: initial;
+                      border-color: $boderClr;
+                      .select2-selection__rendered {
+                        .select2-selection__choice {
+                          background-color: $bg-lightgray;
+                          color: $textClr;
+                          border: 1px solid $boderClr;
+                          .select2-selection__choice__remove {
+                            color: $boderClr;
+                          }
+                        }
+                      }
                     }
                     .select2-selection--single {
                       height: 40px;
                       padding-top: 5px;
                       background-color: $bg-white;
-                      border: 1px solid $bg-darkgray;
+                      border: 1px solid $boderClr;
                       border-radius: 4px;
                       .select2-selection__arrow b {
                         margin-top: 4px;
@@ -175,7 +187,7 @@
                     input {
                       height: 40px;
                       background-color: $bg-white;
-                      border: 1px solid $bg-darkgray;
+                      border: 1px solid $boderClr;
                     }
                     .input-group-prepend {
                       margin-right: 0px;
@@ -214,7 +226,7 @@
                       flex-basis: 100%;
                     }
                     label {
-                      margin-bottom: 0.3rem;
+                      margin-bottom: 0;
                       width: 60px;
                       @media (max-width: 991px) {
                         width: 50px;
@@ -235,6 +247,12 @@
                   @media (max-width: 500px) {
                     flex-wrap: wrap;
                   }
+                  .select2-container {
+                    min-width: 170px;
+                    .select2-selection__rendered {
+                      font-size: 14px;
+                    }
+                  }
                 }
               }
             }
@@ -254,10 +272,12 @@
           overflow-x: auto;
           white-space: nowrap;
           position: relative;
+          color: $textClr;
           td,
           th {
             font-size: 13px;
             vertical-align: middle;
+            
             &:first-child {
               position: sticky;
               top: 0;
@@ -265,14 +285,16 @@
             }
           }
           td {
+            border-top: 1px solid $boderClr;
             background-color: $bg-white;
+            color: $textClr;
           }
         }
         .thead-light {
           th {
-            color: $bg-cyanred;
-            background-color: $bg-cyan;
-            border-color: $bg-exlightgray;
+            color: $textClr;
+            background-color: $bg-inputField;
+            // border-color: $boderClr;
           }
         }
       }

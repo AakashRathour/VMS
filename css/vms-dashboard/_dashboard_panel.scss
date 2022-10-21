@@ -13,6 +13,7 @@
       gap: 8px;
     }
     a {
+      color: $primaryClr;
       font-size: 14px;
       text-decoration: underline;
       @media (max-width: 500px) {
@@ -76,7 +77,10 @@
           font-weight: 400;
           line-height: 1.8;
           white-space: nowrap;
-          color: $bg-black;
+          color:$bg-black;
+          strong{
+            color: $bg-black;
+          }
         }
       }
     }
@@ -89,6 +93,7 @@
         position: relative;
 
         h6 {
+          color: $textClr;
           margin: 0;
           padding: 10px 40px 8px 10px;
           position: relative;
@@ -103,7 +108,7 @@
             top: 60%;
             transform: translateY(-50%);
             right: 15px;
-            color: $bg-gray;
+            color:$textClr;
 
             @media (max-width: 767px) {
               content: "\f107";
@@ -144,7 +149,7 @@
             position: absolute;
             top: 3px;
             left: 7px;
-            border-right: 3px dashed $bg-red;
+            border-right: 3px dashed $primaryClr;
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
           }
 
@@ -156,7 +161,7 @@
               content: "";
               width: 8px;
               height: 8px;
-              background: $bg-red;
+              background: $primaryClr;
               position: absolute;
               top: 4px;
               left: 4px;
@@ -185,11 +190,13 @@
               p {
                 font-size: 13px;
                 font-weight: 700;
+                color: $textClr;
               }
             }
 
             .activity-status {
               p {
+                color: $textClr;
                 font-size: 14px;
                 margin-bottom: 6px;
               }

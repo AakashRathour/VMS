@@ -13,10 +13,24 @@
     @media (max-width: 767px) {
       padding-right: 0.5rem !important;
     }
-    
+
     .padno {
       @media (max-width: 767px) {
         padding: 0;
+      }
+      .lead-panel-accordion {
+        .detail-app {
+          .detail-app-in {
+            .lead-panel-fields-header {
+              flex-basis: 45%;
+              color: $textClr;
+            }
+            .lead-panel-fields-value {
+              text-align: right;
+              color: $bg-black;
+            }
+          }
+        }
       }
     }
 
@@ -43,7 +57,6 @@
     display: none !important;
   }
 }
-
 
 .btn-min-w {
   font-weight: 700;
